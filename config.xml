@@ -1,18 +1,24 @@
 <config>
+#Edit this value to true to fold anonymously. 
   <!-- Client Control -->
   <fold-anon v='false'/>
-
+  
+#Enables folding slots auto-enumeration/detection.
   <!-- Folding Slot Configuration -->
   <gpu v='true'/>
-
+  
+#Set to full for most headless folding applications.  Set to limited for low-power.  
   <!-- Slot Control -->
   <power v='full'/>
-
+  
+#Input user information here.
   <!-- User Information -->
   <passkey v='74075befd7a3dd102ca30e244f37e9cb'/>
   <team v='32'/>
   <user v='superducky'/>
 
+#Manually configure folding slots here.  This setup has 4 GPUs and a Threadripper CPU.  
+#Manually enforcing slots ensures you have enough threads free to feed the GPUs with data. 
   <!-- Folding Slots -->
   <slot id='0' type='CPU'/>
   <slot id='1' type='GPU'/>
@@ -20,6 +26,7 @@
   <slot id='3' type='GPU'/>
   <slot id='4' type='GPU'/>
 
+#Allows remote viewing for stats purposes and Command/Control with no password, for local networks. 
   <!-- Remote Command Server -->
   <command-allow-no-pass v='127.0.0.1 192.168.1.0/24'/>
   <password v=''/>
